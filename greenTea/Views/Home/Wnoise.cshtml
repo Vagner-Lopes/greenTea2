@@ -1,140 +1,199 @@
-﻿@{
-    ViewData["Title"] = "Sobre/QuemSomos";
-}
+﻿@{ ViewData["Title"] = "White Noise"; }
 
 
 
 <hr />
 
+@{
+    var Aquecedor = "/whiteNoises/Aquecedor.mp3";
+    var Aspirador = "/whiteNoises/Aspirador.mp3";
+    var Carro = "/whiteNoises/Carro.mp3";
+    var Cascata = "/whiteNoises/Cascata.mp3";
+    var Chuva = "/whiteNoises/Chuva.mp3";
+    var Chuveiro = "/whiteNoises/Chuveiro.mp3";
+    var Mar = "/whiteNoises/Mar.mp3";
+    var Nebulizador = "/whiteNoises/Nebulizador.mp3";
+    var Secador = "/whiteNoises/Secador.mp3";
+    var Ulterino = "/whiteNoises/Ulterino.mp3";
+    var Vento = "/whiteNoises/Vento.mp3";
+    var Ventilador = "/whiteNoises/Ventilador.mp3";
+    <div class="container mb-5 text-center">
 
-<div class="container text-center">
+        <br />
+        
 
-    <br />
-    <div class="page gallery-page">
-        <section class="clean-block clean-gallery dark">
-            <div class="container">
-                <div class="block-heading">
-                    <h1 class="text-info">White Noise</h1>
-                    <p>Escolha um tipo de som para ser ouvido como barulho de fundo.</p>
+
+        <div class="page gallery-page">
+            <section class="clean-block clean-gallery dark">
+                <div class="container">
+                    <div class="block-heading">
+                        <h1 class="text-info">White Noise</h1>
+                        <p>Escolha um tipo de som para ser ouvido como barulho de fundo.</p>
+                    </div>
+                    <div class="" style="align-items:center; justify-content:center">
+
+
+                        <fieldset class="radio-image row d-flex">
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-2 rounded-lg d-flex wrap justify-content-center">
+                                <div style="width: 170px; position:relative;">
+                                    <label for="w3">
+                                        <input type="radio" name="w-noise" id="w3" class=" text-center" onclick="player('.track3')">
+                                        <img src="/icons/rain (1).png">
+                                        <audio preload="metadata" class="track3" src="@Chuva"></audio>
+                                    </label>
+                                    <span>Chuva</span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-2 rounded-lg d-flex wrap justify-content-center">
+                                <div style="width: 170px; position:relative;">
+                                    <label for="w4">
+                                        <input type="radio" name="w-noise" id="w4" class=" text-center" onclick="player('.track4')">
+                                        <img src="/icons/cascata.png">
+                                        <span>Cascata</span>
+                                        <audio preload="metadata" class="track4" src="@Cascata"></audio>
+
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-2 rounded-lg d-flex wrap justify-content-center">
+                                <div style="width: 170px; position:relative;">
+                                    <label for="w5">
+                                        <input type="radio" name="w-noise" id="w5" class=" text-center" onclick="player('.track5')">
+                                        <img src="/icons/onda.png">
+                                        <span>Ondas</span>
+                                        <audio preload="metadata" class="track5" src="@Mar"></audio>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-2 rounded-lg d-flex wrap justify-content-center">
+                                <div style="width: 170px; position:relative;">
+                                    <label for="w6">
+                                        <input type="radio" name="w-noise" id="w6" class=" text-center" onclick="player('.track6')">
+                                        <img src="/icons/chuveiro.png">
+                                        <span>Chuveiro</span>
+                                        <audio preload="metadata" class="track6" src="@Chuveiro"></audio>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-2 rounded-lg d-flex wrap justify-content-center">
+                                <div style="width: 170px; position:relative;">
+                                    <label for="w7">
+                                        <input type="radio" name="w-noise" id="w7" class=" text-center" onclick="player('.track7')">
+                                        <img src="/icons/wind.png">
+                                        <span>Vento</span>
+                                        <audio preload="metadata" class="track7" src="@Vento"></audio>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-2 rounded-lg d-flex wrap justify-content-center">
+                                <div style="width: 170px; position:relative;">
+                                    <label for="w9">
+                                        <input type="radio" name="w-noise" id="w9" class=" text-center" onclick="player('.track9')">
+                                        <img src="/icons/gravida.png">
+                                        <span>Uterino</span>
+                                        <audio preload="metadata" class="track9" src="@Ulterino"></audio>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-2 rounded-lg d-flex wrap justify-content-center">
+                                <div style="width: 170px; position:relative;">
+                                    <label for="w11">
+                                        <input type="radio" name="w-noise" id="w11" class=" text-center" onclick="player('.track11')">
+                                        <img src="/icons/car (1).png">
+                                        <span>Carro</span>
+                                        <audio preload="metadata" class="track11" src="@Carro"></audio>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-2 rounded-lg d-flex wrap justify-content-center">
+                                <div style="width: 170px; position:relative;">
+                                    <label for="w44">
+                                        <input type="radio" name="w-noise" id="w44" class=" text-center" onclick="player('.track44')">
+                                        <img src="/icons/aquecedor.png">
+                                        <span>Aquecedor</span>
+                                        <audio preload="metadata" class="track44" src="@Aquecedor"></audio>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-2 rounded-lg d-flex wrap justify-content-center">
+                                <div style="width: 170px; position:relative;">
+                                    <label for="w55">
+                                        <input type="radio" name="w-noise" id="w55" class=" text-center" onclick="player('.track55')">
+                                        <img src="/icons/aspirador-de-po.png">
+                                        <span>Aspirador</span>
+                                        <audio preload="metadata" class="track55" src="@Aspirador"></audio>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-2 rounded-lg d-flex wrap justify-content-center">
+                                <div style="width: 170px; position:relative;">
+                                    <label for="w66">
+                                        <input type="radio" name="w-noise" id="w66" class=" text-center" onclick="player('.track66')">
+                                        <img src="/icons/secador-de-cabelo.png">
+                                        <span>Secador</span>
+                                        <audio preload="metadata" class="track66" src="@Secador"></audio>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-2 rounded-lg d-flex wrap justify-content-center">
+                                <div style="width: 170px; position:relative;">
+                                    <label for="w77">
+                                        <input type="radio" name="w-noise" id="w77" class=" text-center" onclick="player('.track77')">
+                                        <img src="/icons/ventilador-de-mesa.png">
+                                        <span>Ventilador</span>
+                                        <audio preload="metadata" class="track77" src="@Ventilador"></audio>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-2 rounded-lg d-flex wrap justify-content-center">
+                                <div style="width: 170px; position:relative;">
+                                    <label for="w88">
+                                        <input type="radio" name="w-noise" id="w88" class=" text-center sd" onclick="player('.track88')">
+                                        <img src="/icons/aquecedor.png">
+                                        <span>Aquecedor</span>
+                                        <audio preload="metadata" class="track88" src="@Nebulizador"></audio>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                    </div>
                 </div>
-                <div class="row" style="align-items:center; justify-content:center">
-
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container wrap" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #87CEEB; width: 170px; height: 130px; align-items:center; justify-content:center">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/rain (1).png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Chuva</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #87CEEB; width: 170px; height: 130px; ">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/rain (1).png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Chuva</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #87CEEB; width: 170px; height: 130px; ">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/rain (1).png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Chuva</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #00BFFF; width: 170px; height: 130px;">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/cascata.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Cascata</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #4169E1; width: 170px; height: 130px;">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/onda.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Ondas</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #1E90FF; width: 170px; height: 130px;">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/chuveiro.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Chuveiro</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #8FBC8F; width: 170px; height: 130px; ">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/wind.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Vento</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #8FBC8F; width: 170px; height: 130px;">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/brisa.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Brisa</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #836FFF; width: 170px; height: 130px;">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/gravida.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Ulterino</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #DB7093; width: 170px; height: 130px; ">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/car (1).png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Carro</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #DB7093; width: 170px; height: 130px; ">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/television.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Televisão</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #DB7093; width: 170px; height: 130px; ">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/radio.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Radio</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #DB7093; width: 170px; height: 130px; ">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/aquecedor.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Aquecedor</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #DB7093; width: 170px; height: 130px; ">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/ar-condicionado.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Ar cond</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #DB7093; width: 170px; height: 130px; ">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/aspirador-de-po.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Aspirador</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #DB7093; width: 170px; height: 130px; ">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/secador-de-cabelo.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Secador</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #DB7093; width: 170px; height: 130px; ">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/ventilador-de-mesa.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Ventilador</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3 item mb-2 rounded-lg w-noise-container" >
-                        <div class="img-thumbnail img-fluid image text-center w-noise-cont"  style="background: #DB7093; width: 170px; height: 130px; ">
-                            <img class="w-noise-img "  style="width: 75px; height: 75px;" src="/icons/aquecedor.png">
-                            <h4 class="w-noise-texto pt-2" style="font-weight:bolder;">Aquecedor</h4>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>    
     </div>
 
-</div>
+            
+
 <script>
-    const player = ()
-</script>
+
+    let cont = 0;
+    const player = (track) => {
+        const audio = document.querySelector(track);
+        const pauseGeral = document.querySelectorAll("audio");
+        for (var i = 0; i < pauseGeral.length; i++) {
+            pauseGeral[i].pause();
+        }
+        console.log(cont);
+        if (cont == 0) {
+            cont = 1;
+            audio.play();
+        } else {
+            audio.pause();
+            cont = 0;
+        }
+        
+    };
+</script> 
+}
+
