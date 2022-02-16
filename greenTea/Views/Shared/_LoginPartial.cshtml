@@ -3,26 +3,22 @@
 @inject UserManager<IdentityUser> UserManager
 
 
-<div class="container">
+<div class="d-flex justify-content-end container-fluid mt-4 collapse navbar-collapse text-center" style="max-width:80px;">
     <ul class="navbar-nav">
         @if (SignInManager.IsSignedIn(User))
         {
-            <li class="nav-item">
-                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
-            </li>
-            <li class="nav-item">
+           
+            <li class="nav-item" data-bss-hover-animate="pulse">
                 <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                    <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+                    <button type="submit" class="nav-link btn btn-link rounded-pill text-white" style="background: linear-gradient(97deg, #00E4D0, #4D90E5), #6AbFdC;width:80px;border-color:white;">Logout</button>
                 </form>
             </li>
         }
         else
         {
-            <li class="nav-item">
-                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Registrar</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white rounded-pill btn btn-info" style="color: #fff;background: #0d94f5;font-size: 23px;margin: 9px;" asp-area="Identity" asp-page="/Account/Login">Login</a>
+           
+            <li class="nav-item mt-2 container-fluid img-fluid" data-bss-hover-animate="pulse" style="width:100px;">
+                <a class="nav-link shadow-lg rounded-pill img-fluid text-white" style="background: linear-gradient(97deg, #00E4D0, #4D90E5), #6AbFdC;" asp-area="Identity" asp-page="/Account/Login">Login</a>
             </li>
         }
     </ul>

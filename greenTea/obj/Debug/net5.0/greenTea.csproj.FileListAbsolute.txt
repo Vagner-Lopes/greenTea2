@@ -427,7 +427,6 @@ C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\CardTables\
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\CardTables\Details.cshtml.g.cs
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\CardTables\Edit.cshtml.g.cs
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\CardTables\Index.cshtml.g.cs
-C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\CardTables\Index2 - Cópia.cshtml.g.cs
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\CardTables\Index2.cshtml.g.cs
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\Categorias\Create.cshtml.g.cs
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\Categorias\Delete.cshtml.g.cs
@@ -450,9 +449,7 @@ C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\greenTea.dll
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\ref\greenTea.dll
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\greenTea.pdb
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\greenTea.genruntimeconfig.cache
-C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\Shared\_LayoutOld.cshtml.g.cs
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\Home\Faq.cshtml.g.cs
-C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\Home\Privacy - Cópia.cshtml.g.cs
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\Home\Receitas.cshtml.g.cs
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\Home\Sobre.cshtml.g.cs
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Views\Home\Wnoise.cshtml.g.cs
@@ -471,3 +468,7 @@ C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Areas\Identity\Pa
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ExternalLogin.cshtml.g.cs
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
 C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
+C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
+C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
+C:\estudos\repoRecode\greenTea\greenTea\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResendEmailConfirmation.cshtml.g.cs
